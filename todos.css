@@ -1,0 +1,104 @@
+#app {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  --themeColor: #ead7d8;
+}
+#app .hidden {
+  display: none;
+}
+#app .show {
+  display: inline-block;
+}
+#app .title {
+  text-align: center;
+  font-size: 50px;
+  color: #ddd;
+  font-weight: lighter;
+}
+#app .todoHead {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  width: 500px;
+}
+#app .todoHead span {
+  flex: 1;
+  font-size: 30px;
+  color: #ddd;
+  transform: rotate(90deg);
+}
+#app .todoHead .allcheck {
+  color: black;
+}
+#app .todoHead .right {
+  flex: 9;
+  position: relative;
+}
+#app .todoHead .right input {
+  height: 50px;
+  width: 98%;
+  font-size: 20px;
+  color: #aaa;
+  text-indent: 2em;
+}
+#app .todoHead .right ul {
+  position: absolute;
+  list-style: none;
+  top: 40px;
+  left: -40px;
+}
+#app .todoHead .right ul li {
+  height: 30px;
+  line-height: 30px;
+  width: 100px;
+  color: black;
+  background-color: #fff;
+  border-bottom: 1px solid black;
+}
+#app .todoMain {
+  width: 500px;
+  margin: 0 auto;
+}
+#app .todoMain .todoItem {
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  background-color: #ddd;
+}
+#app .todoMain .todoItem .delete {
+  text-decoration: line-through;
+  color: black;
+}
+#app .todoMain .todoItem .left {
+  flex: 1;
+}
+#app .todoMain .todoItem .middle {
+  flex: 8;
+}
+#app .todoMain .todoItem .right {
+  flex: 1;
+  text-align: right;
+  padding-right: 10px;
+}
+#app .todoFooter {
+  border-top: 1px solid #ddd;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+}
+#app .todoFooter .left {
+  flex: 1;
+}
+#app .todoFooter .middle {
+  flex: 2;
+  display: flex;
+}
+#app .todoFooter .middle a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+#app .todoFooter .middle .active {
+  color: red;
+}

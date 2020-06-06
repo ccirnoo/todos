@@ -1,0 +1,132 @@
+#app {
+    width       : 500px;
+    margin      : 0 auto;
+    border      : 1px solid #ddd;
+    --themeColor: #ead7d8;
+
+    .hidden {
+        display: none;
+    }
+    
+    .show {
+        display: inline-block;
+    }
+
+    .title {
+        text-align : center;
+        font-size  : 50px;
+        color      : #ddd;
+        font-weight: lighter;
+    }
+
+    .todoHead {
+        margin    : 0 auto;
+        text-align: center;
+        display   : flex;
+        width     : 500px;
+
+
+        span {
+            flex     : 1;
+            font-size: 30px;
+            color    : #ddd;
+            transform: rotate(90deg);
+        }
+
+        .allcheck {
+            color: black;
+        }
+
+        .right {
+            flex       : 9;
+            position  : relative;
+            input {
+                height     : 50px;
+                width      : 98%;
+                font-size  : 20px;
+                color      : #aaa;
+                text-indent: 2em;
+            }
+            ul{
+                position:absolute;
+                list-style: none;
+                top: 40px;
+                left: -40px;
+                li{
+                    height: 30px;
+                    line-height: 30px;
+                    width:100px;
+                    color:black;
+                    background-color:#fff;
+                    border-bottom: 1px solid black;
+                }
+            }
+        }
+
+        .todoInput {}
+
+    }
+
+    .todoMain {
+        width : 500px;
+        margin: 0 auto;
+
+        .todoItem {
+            height          : 30px;
+            line-height     : 30px;
+            display         : flex;
+            background-color: #ddd;
+
+            .delete {
+                text-decoration: line-through;
+                color          : black;
+            }
+
+
+
+            
+
+            .left {
+                flex: 1;
+
+                input {}
+            }
+
+            .middle {
+                flex: 8;
+            }
+
+            .right {
+                flex         : 1;
+                text-align   : right;
+                padding-right: 10px;
+            }
+        }
+    }
+
+    .todoFooter {
+        border-top: 1px solid #ddd;
+        width     : 500px;
+        margin    : 0 auto;
+        display   : flex;
+
+        .left {
+            flex: 1;
+        }
+
+        .middle {
+            flex   : 2;
+            display: flex;
+
+            a {
+                margin-left    : 10px;
+                text-decoration: none;
+                color          : black;
+            }
+
+            .active {
+                color: red;
+            }
+        }
+    }
+}
